@@ -22,7 +22,7 @@ Berikut adalah gambaran arsitektur cloud yang digunakan:
 
 1. Clone repositori ini:  
    ```bash
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/Temfore-Project/Cloud-Computing.git
    ```  
 2. Ikuti instruksi di masing-masing direktori (`/backend` dan `/ml-api`) untuk menjalankan layanan.  
 
