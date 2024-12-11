@@ -4,7 +4,7 @@ Proyek ini mencakup implementasi arsitektur **Cloud Computing** dengan layanan b
 
 ## 📐 **Arsitektur Cloud**  
 Berikut adalah gambaran arsitektur cloud yang digunakan:  
-
+![Arsitektur Cloud TEMFORE drawio](https://github.com/user-attachments/assets/f8fda563-6743-41aa-b223-d244891978dd)
 ---
 
 ## 🔗 **Link Proyek**  
