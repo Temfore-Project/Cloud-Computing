@@ -3,7 +3,7 @@
 Cloud Computing in this architecture utilizes Google Cloud Platform (GCP) with services such as Firebase for authentication and firestore for food data, Cloud Run for API management, and Cloud Storage for machine learning models and image data. Users interact through a Kotlin-based application with key features such as a weather API using OpenWeather, machine learning-based recommendations, and data search and details. The system is designed in a modular and scalable manner to ensure optimal performance through the integration of cloud-native services and the ability to provide personalized recommendations in real-time. 
 
 ## 📐 **Arsitektur Cloud**  
-![Arsitektur Cloud drawio](https://github.com/user-attachments/assets/a2e5c1ae-764d-424b-a676-82d85b316bb1)
+![Uploading Arsitektur Cloud TEMFORE.drawio.png…]()
 ---
 
 ## 🔗 **API**  
