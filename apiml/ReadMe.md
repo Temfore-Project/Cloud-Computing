@@ -1,3 +1,8 @@
+## 🚀 **Get Started**  
+### Clone `repository` with command:  
+```bash
+git clone https://github.com/Temfore-Project/Cloud-Computing.git
+```
 ### `apiml` Folder
 Move to directory `apiml` with command:
 ```bash
