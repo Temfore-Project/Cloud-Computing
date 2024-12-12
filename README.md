@@ -190,7 +190,6 @@ Running the `server` with command:
 ```bash
 npm run start
 ```
-----
 ### `apiml` Folder
 Move to directory `apiml` with command:
 ```bash
