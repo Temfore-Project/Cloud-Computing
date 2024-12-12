@@ -15,8 +15,8 @@ https://recipe-recommendation-api-879994394867.asia-southeast2.run.app
    - Params:
       | Key   | Value       |
       |-------|-------------|
-      | lat   | -6.200000   |
-      | lon   | 106.816666  |
+      | lat   | `number`    |
+      | lon   | `number`    |
    - Example: https://temfore-879994394867.asia-southeast2.run.app/cuaca?lat=-6.200000&lon=106.816666
    - Body Response
      ```bash
@@ -34,9 +34,9 @@ https://recipe-recommendation-api-879994394867.asia-southeast2.run.app
    - method: `GET`
    - endpoint: `/cari`
    - Params:
-      | Key     | Value  |
-      |---------|--------|
-      | title   | ayam   |
+      | Key     | Value    |
+      |---------|----------|
+      | title   | `string` |
    - Example: https://temfore-879994394867.asia-southeast2.run.app/cari?title=ayam
    - Body Response
      ```bash
@@ -69,15 +69,105 @@ https://recipe-recommendation-api-879994394867.asia-southeast2.run.app
            },
            .......
         }
+       ]
       }
       ```
      ![image](https://github.com/user-attachments/assets/3067e4cc-db42-448e-8a1a-622850e6b6d0)
 
 3. Detail
+   - method: `GET`
+   - endpoint: `/detail`
+   - Params:
+      | Key   | Value    |
+      |-------|----------|
+      | id    | `number` |
+   - Example: https://temfore-879994394867.asia-southeast2.run.app/detail?id=1
+   - Body Response
+     ```bash
+      {
+       "id": "TUzv2hwF27evnTAOzB1y",
+        "Id": 1,
+       "Category": "ayam",
+       "Title": "Ayam Woku Manado",
+       "Ingredients": "1 Ekor Ayam Kampung (potong 12)--2 Buah Jeruk Nipis--2 Sdm Garam--3 Ruas Kunyit--7 Bawang Merah--7 Bawang Putih--10 Cabe Merah--10 Cabe Rawit Merah (sesuai selera)--3 Butir Kemiri--2 Batang Sereh--2 Lembar Daun Salam--2 Ikat Daun Kemangi--Penyedap Rasa--1 1/2 Gelas Air--",
+       "Steps": "Cuci bersih ayam dan tiriskan. Lalu peras jeruk nipis (kalo gak ada jeruk nipis bisa pake cuka) dan beri garam. Aduk hingga merata dan diamkan selama 5 menit, biar ayam gak bau amis.--Goreng ayam tersebut setengah matang, lalu tiriskan--Haluskan bumbu menggunakan blender. Bawang merah, bawang putih, cabe merah, cabe rawit, kemiri dan kunyit. Oh iya kasih minyak sedikit yaa biar bisa di blender. Untuk sereh nya di geprek aja terus di buat simpul.--Setelah bumbu di haluskan barulah di tumis. Jangan lupa sereh dan daun salamnya juga ikut di tumis. Di tumis sampai berubah warna ya --Masukan ayam yang sudah di goreng setengah matang ke dalam bumbu yang sudah di tumis, dan diamkan 5 menit dulu. Biar bumbu meresap. Lalu tuangkan 1 1/2 Gelas air. Lalu tambahkan penyedap rasa (saya 3 Sdt, tapi sesuai selera ya) koreksi rasa dan Biar kan sampai mendidih--Setelah masakan mendidih, lalu masukan daun kemangi yang sudah di potong potong. Masak lagi sekitar 10 menit. And taraaaaaaaaaaaaaa..... jadi deh Ayam Woku Manadonya.--Oh iyaa kalo mau di tambahkan potongan tomat merah juga bisa ko. Sesuai selera aja yaa buibuuuu --",
+       "URL": "1_ayam_woku_manado.jpg",
+       "Type": "Makan Siang--Makan Malam--Hidangan Utama--Lauk Pauk--",
+       "Temp(cold)": 1,
+       "imageUrl": "https://storage.googleapis.com/temforeapp-storage/data-foods-img/1_ayam_woku_manado.jpg"
+      }
+      ```
+     ![image](https://github.com/user-attachments/assets/bbcd3820-9402-455d-9b68-b70867ea42e0)
 
 4. Recommendation
+   - method: `GET`
+   - endpoint: `/recommend`
+   - Params:
+      | Key          | Value       |
+      |--------------|-------------|
+      | CategoryUser | `string`   |
+      | TempUser     | `number`  |
+      | TimeUser     | `number`  |
+   - Example: https://temfore-879994394867.asia-southeast2.run.app/recommend?CategoryUser=sapi&TempUser=20&TimeUser=10
+   - Body Response
+     ```bash
+      {
+       "error": false,
+       "message": "Recommend fetched successfully",
+       "listRecommend": [
+        {
+            "Id": 3150,
+            "Category": "sapi",
+            "Title": "Gulai Tetelan Sapi",
+            "Ingredients": "500 gr tetelan sapi--1 buah sereh keprek--3 lembar daun salam--4 lembar daun jeruk--3 butir cengkeh--2 sendok makan air asam jawa (dari 3 daging buah asam jawa diberi air panas)--1,5 liter santan (atau 1300 ml air + 1 kotak kara 200 ml)--Garam dan gula--Bumbu halus :--10 buah cabe keriting--8 butir bawang merah--4 siung besar bawang putih--4 butir kemiri--3 cm kunyit--4 cm jahe--4 cm lengkuas--1 sendok makan ketumbar bubuk--1 sendok teh lada bubuk--",
+            "Steps": "Tumis bumbu halus dengan minyak goreng, masukkan daun salam, daun jeruk, sereh dan cengkeh aduk hingga wangi, masukkan tetelan aduk rata--Masukkan santan, aduk-aduk sesekali agar santan tidak pecah, jika sudah mendidih kecilkan api sedikit, masukkan air asam jawa, masak hingga matang dan kuah mengental, beri garam, gula, koreksi rasa--Sajikan dengan bawang goreng jika ada--",
+            "URL": "3150_gulai_tetelan_sapi.jpg",
+            "Type": "Makan Siang--Makan Malam--Hidangan Utama--Lauk Pauk--Sup--",
+            "Temp(cold)": 1,
+            "imageUrl": "https://storage.googleapis.com/temforeapp-storage/data-foods-img/3150_gulai_tetelan_sapi.jpg",
+            "score": 0.9684265851974487
+        },
+        ...
+       ]
+      }
+      ```
+      ![image](https://github.com/user-attachments/assets/0d11959a-88ed-45fd-81c4-f4d2922eea72)
 
-**API Machine Learning**: [Akses API ML di sini](https://temfore-879994394867.asia-southeast2.run.app)  
+### API Machine Learning
+https://recipe-recommendation-api-879994394867.asia-southeast2.run.app
+Get Recommend
+   - method: `GET`
+   - endpoint: `/recommend`
+   - Params:
+      | Key          | Value       |
+      |--------------|-------------|
+      | CategoryUser | `string`   |
+      | TempUser     | `number`  |
+      | TimeUser     | `number`  |
+   - Example: https://recipe-recommendation-api-879994394867.asia-southeast2.run.app/recommend?CategoryUser=telur&TempUser=20&TimeUser=10
+   - Body Response
+     ```bash
+     {
+     "recommendations": [
+        {
+            "Id": 5002,
+            "Title": "Terik Ayam Tempe Telor",
+            "Type": "Makan Pagi--Makan Siang--Makan Malam--Lauk Pauk--Sup--",
+            "Temp(cold)": 1.0,
+            "score": 0.9987313151359558
+        },
+        {
+            "Id": 5098,
+            "Title": "Telur Ceplok Tauco",
+            "Type": "Makan Siang--Makan Malam--Lauk Pauk--Sup--",
+            "Temp(cold)": 1.0,
+            "score": 0.9898269176483154
+        },
+        ...
+       ]
+      }
+      ```
+      ![image](https://github.com/user-attachments/assets/dcb7276e-789c-406c-9040-af181b39121c)
 
 ---
 
@@ -101,7 +191,7 @@ Running the `server` with command:
 ```bash
 npm run start
 ```
---
+----
 ### `apiml` Folder
 Move to directory `apiml` with command:
 ```bash
