@@ -200,6 +200,7 @@ Install `libraries` with command:
 pip install -r requirements.txt
 ```
 Make sure the model is saved in .h5 format, put it in the model folder
+
 Running the `server` with command:
 ```bash
 python app.py
