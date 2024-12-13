@@ -1,7 +1,19 @@
 # 🌥️ **Cloud Computing Project**  
 
 Cloud Computing in this architecture utilizes Google Cloud Platform (GCP) with services such as Firebase for authentication and firestore for food data, Cloud Run for API management, and Cloud Storage for machine learning models and image data. Users interact through a Kotlin-based application with key features such as a weather API using OpenWeather, machine learning-based recommendations, and data search and details. The system is designed in a modular and scalable manner to ensure optimal performance through the integration of cloud-native services and the ability to provide personalized recommendations in real-time. 
+## C242-PS547
+### Team Members
 
+| Status   | Path | Name                         | Bangkit ID     | University                    | LinkedIn                                                                        | GitHub                                        |
+| -------- | ---- | ---------------------------- | -------------- | ----------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
+| `Active` | (CC) | Nurminati Hasnatul Khatimah  | `C247B4KX2427` | Universitas Lambung Mangkurat | [LinkedIn](https://www.linkedin.com/in/nurminati-hasnatul-khatimah-704b69244/)  | [GitHub](https://github.com/minacloe)         |
+| `Active` | (CC) | Muhammad Adji Maulana Putera | `C247B4KY2686` | Universitas Lambung Mangkurat | [LinkedIn](https://www.linkedin.com/in/muhammad-adji-maulana-putera-514066252/) | [GitHub](https://github.com/adjimaulanap)     |
+| `Active` | (ML) | Balladiva Mahesi             | `M008B4KX0804` | Universitas Gadjah Mada       | [LinkedIn](https://www.linkedin.com/in/balladiva-mahesi-428a16256/)             | [GitHub](https://github.com/bldv)             |
+| `Active` | (ML) | Alif Rahmatullah Lesmana     | `M668B4KY0386` | STMIK Palangka Raya           | [LinkedIn](https://www.linkedin.com/in/alif-rahmatullah-lesmana-565028311/)     | [GitHub](https://github.com/Peparrepair)      |
+| `Active` | (ML) | Muhammad Raffa Saputra       | `M668B4KY2987` | STMIK Palangka Raya           | [LinkedIn](https://www.linkedin.com/in/muhammad-raffa-saputra21/)               | [GitHub](https://github.com/21YeetYa)         |
+| `Active` | (MD) | Riyan Fazri Rahman           | `A668B4KY3894` | STMIK Palangka Raya           | [LinkedIn](https://www.linkedin.com/in/riyan-fazri-rahman/)                     | [GitHub](https://github.com/riyanfazrirahman) |
+
+---
 ## 📐 **Arsitektur Cloud**  
 ![Arsitektur Cloud TEMFORE drawio](https://github.com/user-attachments/assets/a27702dc-0d6f-4df1-b26a-8421966c630d)
 ---
