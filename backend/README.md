@@ -3,7 +3,7 @@
 ```bash
 git clone https://github.com/Temfore-Project/Cloud-Computing.git
 ```
---
+---
 ### `backend` Folder
 Move to directory `backend` with command:
 ```bash
